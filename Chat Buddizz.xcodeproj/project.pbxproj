@@ -1,0 +1,704 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		112820DB1F61C224002C6B6D /* PostManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112820DA1F61C224002C6B6D /* PostManager.swift */; };
+		112820DD1F61C43B002C6B6D /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112820DC1F61C43B002C6B6D /* FirebaseManager.swift */; };
+		11355A781F629D72002DF606 /* NSObject+Chat_BuddiZZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 11355A771F629D72002DF606 /* NSObject+Chat_BuddiZZ.m */; };
+		11355A7D1F629E93002DF606 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 11355A7A1F629E93002DF606 /* ProgressHUD.bundle */; };
+		11355A7E1F629E93002DF606 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 11355A7C1F629E93002DF606 /* ProgressHUD.m */; };
+		115AC9B61F5BE65D00151F54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115AC9B51F5BE65D00151F54 /* AppDelegate.swift */; };
+		115AC9B81F5BE65D00151F54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115AC9B71F5BE65D00151F54 /* ViewController.swift */; };
+		115AC9BB1F5BE65D00151F54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115AC9B91F5BE65D00151F54 /* Main.storyboard */; };
+		115AC9BE1F5BE65D00151F54 /* Chat_Buddizz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 115AC9BC1F5BE65D00151F54 /* Chat_Buddizz.xcdatamodeld */; };
+		115AC9C01F5BE65D00151F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115AC9BF1F5BE65D00151F54 /* Assets.xcassets */; };
+		115AC9C31F5BE65D00151F54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115AC9C11F5BE65D00151F54 /* LaunchScreen.storyboard */; };
+		115AC9CE1F5BE65D00151F54 /* Chat_BuddizzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115AC9CD1F5BE65D00151F54 /* Chat_BuddizzTests.swift */; };
+		115AC9D91F5BE73D00151F54 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 115AC9D81F5BE73D00151F54 /* GoogleService-Info.plist */; };
+		115AC9DC1F5BEEE100151F54 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 115AC9DB1F5BEEE100151F54 /* splash.png */; };
+		115AC9DE1F5BF07A00151F54 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 115AC9DD1F5BF07A00151F54 /* home.png */; };
+		115AC9E01F5BFD2400151F54 /* Login Options.png in Resources */ = {isa = PBXBuildFile; fileRef = 115AC9DF1F5BFD2400151F54 /* Login Options.png */; };
+		115AC9E31F5C003700151F54 /* homeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115AC9E21F5C003700151F54 /* homeScreen.swift */; };
+		115AC9E71F5C01E900151F54 /* homeControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115AC9E61F5C01E900151F54 /* homeControllerViewController.swift */; };
+		115AC9EA1F5C0C2E00151F54 /* LoginOptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115AC9E91F5C0C2E00151F54 /* LoginOptionController.swift */; };
+		11892F641F5C281300A4B1C9 /* LoginWithEmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11892F631F5C281300A4B1C9 /* LoginWithEmailController.swift */; };
+		11892F681F5C73D600A4B1C9 /* aboutMe.png in Resources */ = {isa = PBXBuildFile; fileRef = 11892F671F5C73D600A4B1C9 /* aboutMe.png */; };
+		11892F6A1F5C7BED00A4B1C9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11892F691F5C7BED00A4B1C9 /* HomeViewController.swift */; };
+		11892F6C1F5C7C1F00A4B1C9 /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11892F6B1F5C7C1F00A4B1C9 /* home.swift */; };
+		11892F6E1F5C7C3A00A4B1C9 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11892F6D1F5C7C3A00A4B1C9 /* HomeTableViewCell.swift */; };
+		CBB720DCC7E809B705A939D5 /* Pods_Chat_Buddizz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DB11157EACB78F143A8AB3 /* Pods_Chat_Buddizz.framework */; };
+		EDCAE974EE7E98145B364EBA /* Pods_Chat_BuddizzTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC53BDBB421A53981E62E5BA /* Pods_Chat_BuddizzTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		115AC9CA1F5BE65D00151F54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 115AC9AA1F5BE65C00151F54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 115AC9B11F5BE65C00151F54;
+			remoteInfo = "Chat Buddizz";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05197F459CB657B64F737748 /* Pods-Chat Buddizz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat Buddizz.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chat Buddizz/Pods-Chat Buddizz.release.xcconfig"; sourceTree = "<group>"; };
+		112820DA1F61C224002C6B6D /* PostManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostManager.swift; sourceTree = "<group>"; };
+		112820DC1F61C43B002C6B6D /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		11355A751F629D71002DF606 /* Chat Buddizz-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chat Buddizz-Bridging-Header.h"; sourceTree = "<group>"; };
+		11355A761F629D72002DF606 /* NSObject+Chat_BuddiZZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Chat_BuddiZZ.h"; sourceTree = "<group>"; };
+		11355A771F629D72002DF606 /* NSObject+Chat_BuddiZZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Chat_BuddiZZ.m"; sourceTree = "<group>"; };
+		11355A7A1F629E93002DF606 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		11355A7B1F629E93002DF606 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		11355A7C1F629E93002DF606 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		115AC9B21F5BE65C00151F54 /* Chat Buddizz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chat Buddizz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		115AC9B51F5BE65D00151F54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		115AC9B71F5BE65D00151F54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		115AC9BA1F5BE65D00151F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		115AC9BD1F5BE65D00151F54 /* Chat_Buddizz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chat_Buddizz.xcdatamodel; sourceTree = "<group>"; };
+		115AC9BF1F5BE65D00151F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		115AC9C21F5BE65D00151F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		115AC9C41F5BE65D00151F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		115AC9C91F5BE65D00151F54 /* Chat BuddizzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chat BuddizzTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		115AC9CD1F5BE65D00151F54 /* Chat_BuddizzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat_BuddizzTests.swift; sourceTree = "<group>"; };
+		115AC9CF1F5BE65D00151F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		115AC9D81F5BE73D00151F54 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		115AC9DA1F5BE9A700151F54 /* Chat Buddizz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Chat Buddizz.entitlements"; sourceTree = "<group>"; };
+		115AC9DB1F5BEEE100151F54 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		115AC9DD1F5BF07A00151F54 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		115AC9DF1F5BFD2400151F54 /* Login Options.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login Options.png"; sourceTree = "<group>"; };
+		115AC9E21F5C003700151F54 /* homeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeScreen.swift; sourceTree = "<group>"; };
+		115AC9E61F5C01E900151F54 /* homeControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeControllerViewController.swift; sourceTree = "<group>"; };
+		115AC9E91F5C0C2E00151F54 /* LoginOptionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginOptionController.swift; sourceTree = "<group>"; };
+		11892F631F5C281300A4B1C9 /* LoginWithEmailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWithEmailController.swift; sourceTree = "<group>"; };
+		11892F671F5C73D600A4B1C9 /* aboutMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aboutMe.png; sourceTree = "<group>"; };
+		11892F691F5C7BED00A4B1C9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		11892F6B1F5C7C1F00A4B1C9 /* home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = home.swift; sourceTree = "<group>"; };
+		11892F6D1F5C7C3A00A4B1C9 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		2F5F127292BE2619957833B5 /* Pods-Chat BuddizzTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat BuddizzTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chat BuddizzTests/Pods-Chat BuddizzTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC53BDBB421A53981E62E5BA /* Pods_Chat_BuddizzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chat_BuddizzTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B42DAB0A113C1C59D57471FF /* Pods-Chat Buddizz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat Buddizz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chat Buddizz/Pods-Chat Buddizz.debug.xcconfig"; sourceTree = "<group>"; };
+		B4ADCDB15AA2C1C65C686C65 /* Pods-Chat BuddizzTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat BuddizzTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chat BuddizzTests/Pods-Chat BuddizzTests.release.xcconfig"; sourceTree = "<group>"; };
+		C5DB11157EACB78F143A8AB3 /* Pods_Chat_Buddizz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chat_Buddizz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		115AC9AF1F5BE65C00151F54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB720DCC7E809B705A939D5 /* Pods_Chat_Buddizz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		115AC9C61F5BE65D00151F54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDCAE974EE7E98145B364EBA /* Pods_Chat_BuddizzTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11355A791F629E93002DF606 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				11355A7A1F629E93002DF606 /* ProgressHUD.bundle */,
+				11355A7B1F629E93002DF606 /* ProgressHUD.h */,
+				11355A7C1F629E93002DF606 /* ProgressHUD.m */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		11355A7F1F629EF5002DF606 /* Encryptor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Encryptor;
+			sourceTree = "<group>";
+		};
+		115AC9A91F5BE65C00151F54 = {
+			isa = PBXGroup;
+			children = (
+				11355A791F629E93002DF606 /* ProgressHUD */,
+				115AC9B41F5BE65C00151F54 /* Chat Buddizz */,
+				115AC9CC1F5BE65D00151F54 /* Chat BuddizzTests */,
+				115AC9B31F5BE65C00151F54 /* Products */,
+				5FDA1D665982C49C0FAFFBB7 /* Pods */,
+				75AD8BC53A3819530F6A9C63 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		115AC9B31F5BE65C00151F54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				115AC9B21F5BE65C00151F54 /* Chat Buddizz.app */,
+				115AC9C91F5BE65D00151F54 /* Chat BuddizzTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		115AC9B41F5BE65C00151F54 /* Chat Buddizz */ = {
+			isa = PBXGroup;
+			children = (
+				11355A7F1F629EF5002DF606 /* Encryptor */,
+				115AC9E81F5C01F600151F54 /* Controller */,
+				115AC9E11F5BFFEE00151F54 /* views */,
+				115AC9DA1F5BE9A700151F54 /* Chat Buddizz.entitlements */,
+				115AC9B51F5BE65D00151F54 /* AppDelegate.swift */,
+				115AC9B71F5BE65D00151F54 /* ViewController.swift */,
+				115AC9B91F5BE65D00151F54 /* Main.storyboard */,
+				115AC9BF1F5BE65D00151F54 /* Assets.xcassets */,
+				115AC9C11F5BE65D00151F54 /* LaunchScreen.storyboard */,
+				115AC9C41F5BE65D00151F54 /* Info.plist */,
+				115AC9D81F5BE73D00151F54 /* GoogleService-Info.plist */,
+				115AC9BC1F5BE65D00151F54 /* Chat_Buddizz.xcdatamodeld */,
+				115AC9DB1F5BEEE100151F54 /* splash.png */,
+				115AC9DD1F5BF07A00151F54 /* home.png */,
+				11892F671F5C73D600A4B1C9 /* aboutMe.png */,
+				115AC9DF1F5BFD2400151F54 /* Login Options.png */,
+				112820DC1F61C43B002C6B6D /* FirebaseManager.swift */,
+				112820DA1F61C224002C6B6D /* PostManager.swift */,
+				11355A761F629D72002DF606 /* NSObject+Chat_BuddiZZ.h */,
+				11355A771F629D72002DF606 /* NSObject+Chat_BuddiZZ.m */,
+				11355A751F629D71002DF606 /* Chat Buddizz-Bridging-Header.h */,
+			);
+			path = "Chat Buddizz";
+			sourceTree = "<group>";
+		};
+		115AC9CC1F5BE65D00151F54 /* Chat BuddizzTests */ = {
+			isa = PBXGroup;
+			children = (
+				115AC9CD1F5BE65D00151F54 /* Chat_BuddizzTests.swift */,
+				115AC9CF1F5BE65D00151F54 /* Info.plist */,
+			);
+			path = "Chat BuddizzTests";
+			sourceTree = "<group>";
+		};
+		115AC9E11F5BFFEE00151F54 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				115AC9E21F5C003700151F54 /* homeScreen.swift */,
+				11892F6B1F5C7C1F00A4B1C9 /* home.swift */,
+				11892F6D1F5C7C3A00A4B1C9 /* HomeTableViewCell.swift */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		115AC9E81F5C01F600151F54 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				115AC9E61F5C01E900151F54 /* homeControllerViewController.swift */,
+				115AC9E91F5C0C2E00151F54 /* LoginOptionController.swift */,
+				11892F631F5C281300A4B1C9 /* LoginWithEmailController.swift */,
+				11892F691F5C7BED00A4B1C9 /* HomeViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5FDA1D665982C49C0FAFFBB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B42DAB0A113C1C59D57471FF /* Pods-Chat Buddizz.debug.xcconfig */,
+				05197F459CB657B64F737748 /* Pods-Chat Buddizz.release.xcconfig */,
+				2F5F127292BE2619957833B5 /* Pods-Chat BuddizzTests.debug.xcconfig */,
+				B4ADCDB15AA2C1C65C686C65 /* Pods-Chat BuddizzTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		75AD8BC53A3819530F6A9C63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5DB11157EACB78F143A8AB3 /* Pods_Chat_Buddizz.framework */,
+				AC53BDBB421A53981E62E5BA /* Pods_Chat_BuddizzTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		115AC9B11F5BE65C00151F54 /* Chat Buddizz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 115AC9D21F5BE65D00151F54 /* Build configuration list for PBXNativeTarget "Chat Buddizz" */;
+			buildPhases = (
+				96B64FE82E190A06FC7DFD37 /* [CP] Check Pods Manifest.lock */,
+				115AC9AE1F5BE65C00151F54 /* Sources */,
+				115AC9AF1F5BE65C00151F54 /* Frameworks */,
+				115AC9B01F5BE65C00151F54 /* Resources */,
+				F0E2A8CF9C6EF97DFA439E01 /* [CP] Embed Pods Frameworks */,
+				430E237AB7D51872BE4B3E82 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chat Buddizz";
+			productName = "Chat Buddizz";
+			productReference = 115AC9B21F5BE65C00151F54 /* Chat Buddizz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		115AC9C81F5BE65D00151F54 /* Chat BuddizzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 115AC9D51F5BE65D00151F54 /* Build configuration list for PBXNativeTarget "Chat BuddizzTests" */;
+			buildPhases = (
+				D590B5BBAD4EB61E732C83D7 /* [CP] Check Pods Manifest.lock */,
+				115AC9C51F5BE65D00151F54 /* Sources */,
+				115AC9C61F5BE65D00151F54 /* Frameworks */,
+				115AC9C71F5BE65D00151F54 /* Resources */,
+				A9DDCA17CAED4A51DAD5C96B /* [CP] Embed Pods Frameworks */,
+				ADE2EEE95EFBFE4090BB42EE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				115AC9CB1F5BE65D00151F54 /* PBXTargetDependency */,
+			);
+			name = "Chat BuddizzTests";
+			productName = "Chat BuddizzTests";
+			productReference = 115AC9C91F5BE65D00151F54 /* Chat BuddizzTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		115AC9AA1F5BE65C00151F54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Ammy Pandey";
+				TargetAttributes = {
+					115AC9B11F5BE65C00151F54 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = C2WZ997HDM;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					115AC9C81F5BE65D00151F54 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = C2WZ997HDM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 115AC9B11F5BE65C00151F54;
+					};
+				};
+			};
+			buildConfigurationList = 115AC9AD1F5BE65C00151F54 /* Build configuration list for PBXProject "Chat Buddizz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 115AC9A91F5BE65C00151F54;
+			productRefGroup = 115AC9B31F5BE65C00151F54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				115AC9B11F5BE65C00151F54 /* Chat Buddizz */,
+				115AC9C81F5BE65D00151F54 /* Chat BuddizzTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		115AC9B01F5BE65C00151F54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				115AC9C31F5BE65D00151F54 /* LaunchScreen.storyboard in Resources */,
+				115AC9D91F5BE73D00151F54 /* GoogleService-Info.plist in Resources */,
+				115AC9E01F5BFD2400151F54 /* Login Options.png in Resources */,
+				11892F681F5C73D600A4B1C9 /* aboutMe.png in Resources */,
+				115AC9DE1F5BF07A00151F54 /* home.png in Resources */,
+				11355A7D1F629E93002DF606 /* ProgressHUD.bundle in Resources */,
+				115AC9C01F5BE65D00151F54 /* Assets.xcassets in Resources */,
+				115AC9BB1F5BE65D00151F54 /* Main.storyboard in Resources */,
+				115AC9DC1F5BEEE100151F54 /* splash.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		115AC9C71F5BE65D00151F54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		430E237AB7D51872BE4B3E82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chat Buddizz/Pods-Chat Buddizz-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96B64FE82E190A06FC7DFD37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A9DDCA17CAED4A51DAD5C96B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chat BuddizzTests/Pods-Chat BuddizzTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADE2EEE95EFBFE4090BB42EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chat BuddizzTests/Pods-Chat BuddizzTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D590B5BBAD4EB61E732C83D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F0E2A8CF9C6EF97DFA439E01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chat Buddizz/Pods-Chat Buddizz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		115AC9AE1F5BE65C00151F54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112820DD1F61C43B002C6B6D /* FirebaseManager.swift in Sources */,
+				11355A781F629D72002DF606 /* NSObject+Chat_BuddiZZ.m in Sources */,
+				115AC9E31F5C003700151F54 /* homeScreen.swift in Sources */,
+				115AC9BE1F5BE65D00151F54 /* Chat_Buddizz.xcdatamodeld in Sources */,
+				11892F641F5C281300A4B1C9 /* LoginWithEmailController.swift in Sources */,
+				11892F6A1F5C7BED00A4B1C9 /* HomeViewController.swift in Sources */,
+				115AC9EA1F5C0C2E00151F54 /* LoginOptionController.swift in Sources */,
+				115AC9B81F5BE65D00151F54 /* ViewController.swift in Sources */,
+				11892F6E1F5C7C3A00A4B1C9 /* HomeTableViewCell.swift in Sources */,
+				11892F6C1F5C7C1F00A4B1C9 /* home.swift in Sources */,
+				11355A7E1F629E93002DF606 /* ProgressHUD.m in Sources */,
+				112820DB1F61C224002C6B6D /* PostManager.swift in Sources */,
+				115AC9E71F5C01E900151F54 /* homeControllerViewController.swift in Sources */,
+				115AC9B61F5BE65D00151F54 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		115AC9C51F5BE65D00151F54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				115AC9CE1F5BE65D00151F54 /* Chat_BuddizzTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		115AC9CB1F5BE65D00151F54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 115AC9B11F5BE65C00151F54 /* Chat Buddizz */;
+			targetProxy = 115AC9CA1F5BE65D00151F54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		115AC9B91F5BE65D00151F54 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				115AC9BA1F5BE65D00151F54 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		115AC9C11F5BE65D00151F54 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				115AC9C21F5BE65D00151F54 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		115AC9D01F5BE65D00151F54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		115AC9D11F5BE65D00151F54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		115AC9D31F5BE65D00151F54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B42DAB0A113C1C59D57471FF /* Pods-Chat Buddizz.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Chat Buddizz/Chat Buddizz.entitlements";
+				DEVELOPMENT_TEAM = C2WZ997HDM;
+				INFOPLIST_FILE = "Chat Buddizz/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "amit.pandey.Chat-Buddizz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chat Buddizz/Chat Buddizz-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		115AC9D41F5BE65D00151F54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05197F459CB657B64F737748 /* Pods-Chat Buddizz.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Chat Buddizz/Chat Buddizz.entitlements";
+				DEVELOPMENT_TEAM = C2WZ997HDM;
+				INFOPLIST_FILE = "Chat Buddizz/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "amit.pandey.Chat-Buddizz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chat Buddizz/Chat Buddizz-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		115AC9D61F5BE65D00151F54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F5F127292BE2619957833B5 /* Pods-Chat BuddizzTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = C2WZ997HDM;
+				INFOPLIST_FILE = "Chat BuddizzTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ammy.pandey.Chat-BuddizzTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chat Buddizz.app/Chat Buddizz";
+			};
+			name = Debug;
+		};
+		115AC9D71F5BE65D00151F54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4ADCDB15AA2C1C65C686C65 /* Pods-Chat BuddizzTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = C2WZ997HDM;
+				INFOPLIST_FILE = "Chat BuddizzTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ammy.pandey.Chat-BuddizzTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chat Buddizz.app/Chat Buddizz";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		115AC9AD1F5BE65C00151F54 /* Build configuration list for PBXProject "Chat Buddizz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				115AC9D01F5BE65D00151F54 /* Debug */,
+				115AC9D11F5BE65D00151F54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		115AC9D21F5BE65D00151F54 /* Build configuration list for PBXNativeTarget "Chat Buddizz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				115AC9D31F5BE65D00151F54 /* Debug */,
+				115AC9D41F5BE65D00151F54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		115AC9D51F5BE65D00151F54 /* Build configuration list for PBXNativeTarget "Chat BuddizzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				115AC9D61F5BE65D00151F54 /* Debug */,
+				115AC9D71F5BE65D00151F54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		115AC9BC1F5BE65D00151F54 /* Chat_Buddizz.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				115AC9BD1F5BE65D00151F54 /* Chat_Buddizz.xcdatamodel */,
+			);
+			currentVersion = 115AC9BD1F5BE65D00151F54 /* Chat_Buddizz.xcdatamodel */;
+			path = Chat_Buddizz.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 115AC9AA1F5BE65C00151F54 /* Project object */;
+}
